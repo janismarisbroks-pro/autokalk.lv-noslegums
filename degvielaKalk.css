@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #035E7B;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 130px; /* Set a fixed height for the header */ /* Ensure positioning context for the logo */
+}
+
+
+.logo-container {
+    position: absolute; /* Position the logo absolutely */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    transform: translateX(140%);
+}
+
+.logo-container img {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.button-div {
+    position: absolute;
+}
+
+.ttw_button {
+    display: inline-block;
+    padding: 1px 3px;
+    font-weight: bold;
+    background: #035E7B;
+    box-shadow: 0 0 0 3px #035E7B,
+                inset 0 0 0 1px #fff;
+}
+.menu-btn {
+    position: absolute;
+    padding-left: 49%;
+    padding-right: 49%;
+    margin-top: 70px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Adjust the height of the button */
+    cursor: pointer;
+    border: none; /* Remove default button border */
+    background-color: #fff; /* White background */
+}
+
+.menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: #035E7B;
+    border-radius: 0px; /* Adding a small border-radius for the lines */
+}
+
+/* Adjust the spacing between the lines */
+.menu-line + .menu-line {
+    margin-top: 3px;
+
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown-content h3 {
+    margin-top: 0;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content ul li a {
+    color: #035E7B;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.dropdown-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+}
+
+.date-time {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.car-fact {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.car-fact {
+    margin-left: 30px; /* Push the logo container to the right */
+}
+
+.date-time {
+    margin-right: 30px; /* Push the date-time container to the left */
+}
+
+.logo-bottom {
+    text-align: left;
+    padding: 20px 0;
+    margin-left: 4%;
+    width:40%;
+}
+
+.logo-bottom img {
+    max-width: 50%; /* Adjust the size of the logo */
+}
+
+.logo-bottom h1 {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 50px;
+    font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+form {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#result {
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}

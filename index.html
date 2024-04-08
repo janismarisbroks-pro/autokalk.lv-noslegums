@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Calculator Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="car-fact">
+            <p>Auto fakts</p>
+            <p id="car-fact-content"></p>
+        </div>
+        <div class="logo-container">
+            <img src="bildes\1.png" alt="Logo">
+        </div>
+        <div class="btn">
+            <button class="menu-btn ttw_button" onclick="toggleMenu()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div id="menu" class="dropdown-content">
+                    <div>
+                        <h4>Kalkulatori</h4>
+                        <ul>
+                            <li><a href="#">Degvielas izmaksas kalkulators</a></li>
+                            <li><a href="#">Kredīta izmaksas kalkulators</a></li>
+                            <li><a href="#">Riepu izmēra kalkulators</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Spēles</h4>
+                        <ul>
+                            <li><a href="#">Ceļa zīmju atpazīšana</a></li>
+                            <li><a href="#">Automašīnas detaļu nosaukšana</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="date-time">
+            <p id="datetime"></p>
+        </div>
+    </header>
+
+    <div class="logo-bottom">
+        <img src="bildes\2.png" alt="Logo">
+        <h1>Visi noderīgie kalkulatori un rīki par automašīnām un braukšanu vienuviet</h1>
+    </div>
+
+    <div class="calculator-grid">
+        <h2>Kalkulatori</h2>
+        <a href="#" class="calculator-item fuel-cost">
+            <span class="icon"></span>
+            <span class="text">Degvielas izmaksas</span>
+        </a>
+        <a href="#" class="calculator-item loan-payment">
+            <span class="icon"></span>
+            <span class="text">Kredīta apmaksa</span>
+        </a>
+        <a href="#" class="calculator-item tire-size">
+            <span class="icon"></span>
+            <span class="text">Riepu izmērs</span>
+        </a>
+        <a href="#" class="calculator-item cost-of-ownership">
+            <span class="icon"></span>
+            <span class="text">Uzturēšanas izmaksas</span>
+        </a>
+    </div>
+
+    <div class="calculator-grid">
+        <h2>Spēles</h2>
+        <a href="#" class="calculator-item fuel-cost">
+            <span class="icon"></span>
+            <span class="text">Ceļa zīmju atpazīšana</span>
+        </a>
+        <a href="#" class="calculator-item loan-payment">
+            <span class="icon"></span>
+            <span class="text">Automašīnas detaļu nosaukšana</span>
+        </a>
+    </div>
+
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

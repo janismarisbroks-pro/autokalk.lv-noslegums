@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #035E7B;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 130px; /* Set a fixed height for the header */ /* Ensure positioning context for the logo */
+}
+
+
+.logo-container {
+    position: absolute; /* Position the logo absolutely */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    transform: translateX(140%);
+}
+
+.logo-container img {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.button-div {
+    position: absolute;
+}
+
+.ttw_button {
+    display: inline-block;
+    padding: 1px 3px;
+    font-weight: bold;
+    background: #035E7B;
+    box-shadow: 0 0 0 3px #035E7B,
+                inset 0 0 0 1px #fff;
+}
+.menu-btn {
+    position: absolute;
+    padding-left: 49%;
+    padding-right: 49%;
+    margin-top: 70px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Adjust the height of the button */
+    cursor: pointer;
+    border: none; /* Remove default button border */
+    background-color: #fff; /* White background */
+}
+
+.menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: #035E7B;
+    border-radius: 0px; /* Adding a small border-radius for the lines */
+}
+
+/* Adjust the spacing between the lines */
+.menu-line + .menu-line {
+    margin-top: 3px;
+
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown-content h3 {
+    margin-top: 0;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content ul li a {
+    color: #035E7B;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.dropdown-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+}
+
+.date-time {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.car-fact {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.car-fact {
+    margin-left: 30px; /* Push the logo container to the right */
+}
+
+.date-time {
+    margin-right: 30px; /* Push the date-time container to the left */
+}
+
+.logo-bottom {
+    text-align: left;
+    padding: 20px 0;
+    margin-left: 4%;
+    width:40%;
+}
+
+.logo-bottom img {
+    max-width: 50%; /* Adjust the size of the logo */
+}
+
+.logo-bottom h1 {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 50px;
+    font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
+}
+
+
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.calculator-grid h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.calculator-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.calculator-grid h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.calculator-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+}
+
+.calculator-item .icon {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    background-size: cover;
+}
+
+.calculator-item .text {
+    padding: 10px 0;
+}
+
+/* Background images for each calculator item */
+.loan-payment .icon {
+    background-image: url('https://www.banknote.lv/storage/files/paterina-kredits-interneta-1-min.jpg');
+}
+
+.fuel-cost .icon {
+    background-image: url('https://www.canadianfuels.ca/wp-content/uploads/2020/09/conventional-fuels-hero.jpg');
+}
+
+.cost-of-ownership .icon {
+    background-image: url('https://assets-global.website-files.com/60a6b551be6130e4e5b19b98/616453a91181419f74fe28e1_614dfcd3caf4ce749abde1bf_cash-basis-sinking-your-startup.jpeg');
+}
+
+.tire-size .icon {
+    background-image: url('https://qph.cf2.quoracdn.net/main-qimg-4dddb3c212617d63a541afa13a7da947');
+}
+
+
+/* .game-section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.game-heading {
+    color: violet;
+    text-align: center;
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: violet;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.game-item:hover {
+    background-color: rgba(238,130,238,0.3);
+}
+
+.game-item .icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('game_icon.png');
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.game-text {
+    font-size: 18px;
+} */
+
+/* .menu {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: #fff;
+}
+
+.section {
+    padding: 20px;
+    background-color: #1E90FF;
+    border-radius: 10px;
+} */

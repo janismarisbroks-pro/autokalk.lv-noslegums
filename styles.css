@@ -15,11 +15,11 @@ body {
 
 
 .logo-container {
-    position: absolute; /* Position the logo absolutely */
+    /* position: absolute; Position the logo absolutely */
     margin-top: 0;
     margin-bottom: 0;
+    width: 33%;
     text-align: center;
-    transform: translateX(140%);
 }
 
 .logo-container img {
@@ -116,6 +116,7 @@ body {
 }
 
 .car-fact {
+    width: 33%;
     font-size: 15px;
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -127,26 +128,27 @@ body {
     margin-left: 30px; /* Push the logo container to the right */
 }
 
-.date-time {
-    margin-right: 30px; /* Push the date-time container to the left */
+.date-time { /* Push the date-time container to the left */
+    width: 33%;
+    text-align: right;
 }
 
 .logo-bottom {
     text-align: left;
     padding: 20px 0;
     margin-left: 4%;
-    width:40%;
+    width:80%;
 }
 
 .logo-bottom img {
-    max-width: 50%; /* Adjust the size of the logo */
+    max-width: 60%; /* Adjust the size of the logo */
 }
 
 .logo-bottom h1 {
     color: #000000;
     font-family: "Roboto", sans-serif;
-    font-weight: 550;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 350%;
     font-style: normal;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
 }
@@ -204,8 +206,8 @@ body {
 }
 
 .calculator-item .icon {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     background-size: cover;
 }
 
@@ -230,6 +232,19 @@ body {
     background-image: url('https://qph.cf2.quoracdn.net/main-qimg-4dddb3c212617d63a541afa13a7da947');
 }
 
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    width: 100%; 
+} 
+.grid-child-element { 
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 7%;
+
+    /* border: 1px solid red;  */
+}
 
 /* .game-section {
     padding: 20px;
@@ -277,3 +292,154 @@ body {
     background-color: #1E90FF;
     border-radius: 10px;
 } */
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  
+.grid-container-sec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  /* Grid item */
+  .grid-item {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Maintain aspect ratio for square grid items */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281);
+  }
+  
+
+  .grid-item2 {
+    position: relative;
+    width: 100%;
+    padding-top: 30%; /* Maintain aspect ratio for square grid items */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281);
+  }
+  /* Link styling */
+  .calculator-link,
+  .game-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  /* Icon */
+  .icon {
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .icon2 {
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  /* Calculator icons */
+  .calculator1 {
+    background-image: url('https://www.canadianfuels.ca/wp-content/uploads/2020/09/conventional-fuels-hero.jpg');
+  }
+  
+  .calculator2 {
+    background-image: url('https://www.banknote.lv/storage/files/paterina-kredits-interneta-1-min.jpg');
+  }
+  
+  .calculator3 {
+    background-image: url('https://www.bridgestoneamericas.com/content/corpcomm/americas/en/company/safety/choosing-tires/determining-tire-size/_jcr_content/root/layoutmain/sectiongroup_1544638/section-content/image.img.jpg/1647263691640.jpg');
+  }
+  
+  .calculator4 {
+    background-image: url('https://assets-global.website-files.com/60a6b551be6130e4e5b19b98/616453a91181419f74fe28e1_614dfcd3caf4ce749abde1bf_cash-basis-sinking-your-startup.jpeg');
+  }
+  
+  /* Game icons */
+  .game1 {
+    background-image: url('https://www.celubuve24.lv/cela-zimes-un-norades/photo_1.jpeg');
+  }
+  
+  .game2 {
+    background-image: url('https://i.pinimg.com/originals/b4/b3/3b/b4b33b198fb7f18138427f21950fe95d.jpg');
+  }
+  
+  /* Calculator name */
+  .calculator-name,
+  .game-name {
+    padding: 3%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size:xx-large;
+    /* margin-bottom:50%;
+    margin-top:50%; */
+    /* margin:50%; */
+  }
+
+.calc-title {
+    text-align: center;
+    background-color: #088DB7;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.game-title {
+    margin-top: 5%;
+    text-align: center;
+    background-color: #3644C0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+  
+  

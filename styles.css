@@ -13,17 +13,29 @@ body {
     height: 130px; /* Set a fixed height for the header */ /* Ensure positioning context for the logo */
 }
 
+.parent {
+    margin: 1rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    height: 100px;
+    width: 35%;
+  }
+
 
 .logo-container {
     /* position: absolute; Position the logo absolutely */
     margin-top: 0;
-    margin-bottom: 0;
-    width: 33%;
+    margin-bottom: 1%;
+    min-width: 33vw;
     text-align: center;
 }
 
 .logo-container img {
-    max-width: 30%;
+    max-height: 10vh;
     height: auto;
     margin: 0 auto; /* Center the image horizontally */
 }
@@ -77,11 +89,15 @@ body {
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 10px;
+    padding: 30px;
 }
 
-.dropdown-content h3 {
-    margin-top: 0;
+.dropdown-content h4,h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 130%;
+    font-style: normal;
+    margin-top: 0px;
 }
 
 .dropdown-content ul {
@@ -97,6 +113,10 @@ body {
     color: #035E7B;
     text-decoration: none;
     font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 120%;
+    font-style: normal;
 }
 
 .dropdown-content ul li a:hover {
@@ -124,6 +144,12 @@ body {
     font-style: normal;
 }
 
+.fakts1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .car-fact {
     margin-left: 30px; /* Push the logo container to the right */
 }
@@ -131,6 +157,7 @@ body {
 .date-time { /* Push the date-time container to the left */
     width: 33%;
     text-align: right;
+    margin-right: 30px;
 }
 
 .logo-bottom {

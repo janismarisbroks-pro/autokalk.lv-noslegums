@@ -21,12 +21,12 @@ updateTime();
 
 // Random car facts
 const carFacts = [
-    "The first car accident occurred in 1891 in Ohio, United States.",
-    "The average car has around 30,000 parts.",
-    "The Volkswagen Beetle was designed by Ferdinand Porsche.",
-    "The Ford Model T, introduced in 1908, was the first mass-produced car.",
-    "The Toyota Corolla is the best-selling car model of all time.",
-    "The most expensive car ever sold at auction is the 1962 Ferrari 250 GTO, which fetched $48.4 million."
+    "Pirmā autoavārija notika 1891. gadā Ohaio štatā, ASV.",
+    "Vidējā automašīnā ir aptuveni 30 000 detaļu.",
+    "Volkswagen Beetle izstrādāja Ferdinands Porše.",
+    "Ford Model T, kas tika prezentēts 1908. gadā, bija pirmais masveidā ražotais automobilis.",
+    "Toyota Corolla ir visu laiku vislabāk pārdotais auto modelis.",
+    "Visdārgākā automašīna, kas jebkad pārdota izsolē, ir 1962. gada Ferrari 250 GTO, kas maksāja 48,4 miljonus dolāru."
 ];
 
 // Function to display a random car fact

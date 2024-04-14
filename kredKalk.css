@@ -98,7 +98,7 @@ body {
     font-size: 130%;
     font-style: normal;
     margin-top: 0px;
-    color: #000000;
+    color: black;
 }
 
 .dropdown-content ul {
@@ -172,80 +172,50 @@ body {
     max-width: 60%; /* Adjust the size of the logo */
 }
 
-.logo-bottom h1 {
-    color: #000000;
+.container3 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 350%;
-    font-style: normal;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
+    font-size: 120%;
+    background-color: #F8F8F8;
 }
-form {
-    margin-bottom: 20px;
+
+.input-container {
+    margin-bottom: 15px;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
 }
-input[type="number"] {
+
+input {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
+
 button {
-    padding: 10px 40px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 100%;
 }
-form button:hover {
-    background-color: #0056b3;
-}
+
 #result {
     margin-top: 20px;
 }
 
-.container3 {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 3%;
-    background-color: #F8F8F8;
-    border-radius: 1%;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 120%;
+canvas {
+    margin-top: 20px;
+    display: block;
 }
-
-.result {
-    background-color: #F8F8F8;
-    border-radius: 1%;
-    padding: 5%;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 120%;
-}
-
-.parent2 {
-    text-align: center;
-  }
-  .child2 {
-    display: inline-block;
-    vertical-align: middle;
-    width: 40%;
-    
-  }

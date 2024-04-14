@@ -21,12 +21,12 @@ updateTime();
 
 // Random car facts
 const carFacts = [
-    "The first car accident occurred in 1891 in Ohio, United States.",
-    "The average car has around 30,000 parts.",
-    "The Volkswagen Beetle was designed by Ferdinand Porsche.",
-    "The Ford Model T, introduced in 1908, was the first mass-produced car.",
-    "The Toyota Corolla is the best-selling car model of all time.",
-    "The most expensive car ever sold at auction is the 1962 Ferrari 250 GTO, which fetched $48.4 million."
+    "Pirmā autoavārija notika 1891. gadā Ohaio štatā, ASV.",
+    "Vidējā automašīnā ir aptuveni 30 000 detaļu.",
+    "Volkswagen Beetle izstrādāja Ferdinands Porše.",
+    "Ford Model T, kas tika prezentēts 1908. gadā, bija pirmais masveidā ražotais automobilis.",
+    "Toyota Corolla ir visu laiku vislabāk pārdotais auto modelis.",
+    "Visdārgākā automašīna, kas jebkad pārdota izsolē, ir 1962. gada Ferrari 250 GTO, kas maksāja 48,4 miljonus dolāru."
 ];
 
 // Function to display a random car fact
@@ -77,12 +77,17 @@ document.getElementById('fuelForm').addEventListener('submit', function(event) {
     const litresNeeded = distance / 100 * efficiency;
 
     // Display result
-    document.getElementById('result').innerHTML = `
-        <h2>Rezultāts</h2>
-        <p>Degvielas izmaksas: ${parseFloat(fuelCost.toFixed(2))} EUR</p>
-        <p>Degvielas tilpums: ${parseFloat(litresNeeded.toFixed(2))} L</p>
-        <p>Brauciena attālums: ${parseFloat(distance)} km</p>
-        <p>Degvielas efektivitāte: ${parseFloat(efficiency)} L/100 km</p>
-        <p>Degvielas cena: ${parseFloat(fuelPrice)} EUR/L</p>
-    `;
+    // document.getElementById('result').innerHTML = `
+    //     <h2>Rezultāts</h2>
+    //     <p>Degvielas izmaksas: ${parseFloat(fuelCost.toFixed(2))} EUR</p>
+    //     <p>Degvielas tilpums: ${parseFloat(litresNeeded.toFixed(2))} L</p>
+    //     <p>Brauciena attālums: ${parseFloat(distance)} km</p>
+    //     <p>Degvielas efektivitāte: ${parseFloat(efficiency)} L/100 km</p>
+    //     <p>Degvielas cena: ${parseFloat(fuelPrice)} EUR/L</p>
+    // `;
+    document.getElementById('fuel').innerHTML = `${parseFloat(fuelCost.toFixed(2))} EUR`;
+    document.getElementById('volume').innerHTML = `${parseFloat(litresNeeded.toFixed(2))} L`;
+    document.getElementById('dist').innerHTML = `${parseFloat(distance)} km`;
+    document.getElementById('eff').innerHTML = `${parseFloat(efficiency)} L/100 km`;
+    document.getElementById('pri').innerHTML = `${parseFloat(fuelPrice)} EUR/L`;
 });

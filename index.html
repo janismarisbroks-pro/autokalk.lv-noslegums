@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Calculator Website</title>
+    <title>autokalk.lv | Auto kalkulatori un spēles</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,10 @@
     <header class="header">
         <div class="car-fact">
             <p>Auto fakts</p>
-            <p id="car-fact-content"></p>
+            <p class="fakts1" id="car-fact-content"></p>
         </div>
         <div class="logo-container">
-            <img src="bildes\1.png" alt="Logo">
+            <a href="index.html"><img src="bildes\1.png" alt="Logo"></a>
         </div>
         <div class="btn">
             <button class="menu-btn ttw_button" onclick="toggleMenu()">
@@ -24,21 +24,28 @@
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div id="menu" class="dropdown-content">
+                    <div class='parent'>
+                        <div class='child'>
                     <div>
                         <h4>Kalkulatori</h4>
                         <ul>
                             <li><a href="degvielaKalk.html">Degvielas izmaksas kalkulators</a></li>
-                            <li><a href="#">Kredīta izmaksas kalkulators</a></li>
+                            <li><a href="kredKalk.html">Kredīta izmaksas kalkulators</a></li>
                             <li><a href="#">Riepu izmēra kalkulators</a></li>
+                            <li><a href="#">Uzturēšanas izmaksu kalkulators</a></li>
                         </ul>
                     </div>
+                    </div>
+                    <div class='child'>
                     <div>
                         <h4>Spēles</h4>
                         <ul>
-                            <li><a href="#">Ceļa zīmju atpazīšana</a></li>
+                            <li><a href="celaZimes.html">Ceļa zīmju atpazīšana</a></li>
                             <li><a href="#">Automašīnas detaļu nosaukšana</a></li>
                         </ul>
                     </div>
+                </div>
+                </div>
                 </div>
             </button>
         </div>
@@ -60,13 +67,13 @@
     <div class="calc-title"><p>Kalkulatori</p></div>
     <div class="grid-container">
         <div class="grid-item">
-            <a href="#" class="calculator-link">
+            <a href="degvielaKalk.html" class="calculator-link">
                 <div class="icon calculator1"></div>
                 <span class="calculator-name">Degvielas izmaksas</span>
             </a>
         </div>
         <div class="grid-item">
-            <a href="#" class="calculator-link">
+            <a href="kredKalk.html" class="calculator-link">
                 <div class="icon calculator2"></div>
                 <span class="calculator-name">Kredīta apmaksa</span>
             </a>
@@ -87,7 +94,7 @@
         <div class="game-title"><p>Spēles</p></div>
         <div class="grid-container-sec">
         <div class="grid-item2">
-            <a href="#" class="game-link">
+            <a href="celaZimes.html" class="game-link">
                 <div class="icon game1"></div>
                 <span class="game-name">Ceļa zīmju atpazīšana</span>
             </a>

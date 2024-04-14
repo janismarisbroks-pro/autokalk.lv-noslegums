@@ -13,17 +13,29 @@ body {
     height: 130px; /* Set a fixed height for the header */ /* Ensure positioning context for the logo */
 }
 
+.parent {
+    margin: 1rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    height: 100px;
+    width: 35%;
+  }
+
 
 .logo-container {
-    position: absolute; /* Position the logo absolutely */
+    /* position: absolute; Position the logo absolutely */
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1%;
+    min-width: 33vw;
     text-align: center;
-    transform: translateX(140%);
 }
 
 .logo-container img {
-    max-width: 30%;
+    max-height: 10vh;
     height: auto;
     margin: 0 auto; /* Center the image horizontally */
 }
@@ -77,11 +89,15 @@ body {
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 10px;
+    padding: 30px;
 }
 
-.dropdown-content h3 {
-    margin-top: 0;
+.dropdown-content h4,h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 130%;
+    font-style: normal;
+    margin-top: 0px;
 }
 
 .dropdown-content ul {
@@ -97,6 +113,10 @@ body {
     color: #035E7B;
     text-decoration: none;
     font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 120%;
+    font-style: normal;
 }
 
 .dropdown-content ul li a:hover {
@@ -116,6 +136,7 @@ body {
 }
 
 .car-fact {
+    width: 33%;
     font-size: 15px;
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -123,113 +144,41 @@ body {
     font-style: normal;
 }
 
+.fakts1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .car-fact {
     margin-left: 30px; /* Push the logo container to the right */
 }
 
-.date-time {
-    margin-right: 30px; /* Push the date-time container to the left */
+.date-time { /* Push the date-time container to the left */
+    width: 33%;
+    text-align: right;
+    margin-right: 30px;
 }
 
 .logo-bottom {
     text-align: left;
     padding: 20px 0;
     margin-left: 4%;
-    width:40%;
+    width:80%;
 }
 
 .logo-bottom img {
-    max-width: 50%; /* Adjust the size of the logo */
+    max-width: 60%; /* Adjust the size of the logo */
 }
 
 .logo-bottom h1 {
     color: #000000;
     font-family: "Roboto", sans-serif;
-    font-weight: 550;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 350%;
     font-style: normal;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
 }
-
-
-
-.calculator-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    text-align: center;
-}
-
-.calculator-grid h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 20px;
-}
-
-.calculator-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Adjust as needed */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #333;
-    overflow: hidden;
-}
-
-.calculator-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    text-align: center;
-}
-
-.calculator-grid h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 20px;
-}
-
-.calculator-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Adjust as needed */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #333;
-    overflow: hidden;
-}
-
-.calculator-item .icon {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    background-size: cover;
-}
-
-.calculator-item .text {
-    padding: 10px 0;
-}
-
-/* Background images for each calculator item */
-.loan-payment .icon {
-    background-image: url('https://www.banknote.lv/storage/files/paterina-kredits-interneta-1-min.jpg');
-}
-
-.fuel-cost .icon {
-    background-image: url('https://www.canadianfuels.ca/wp-content/uploads/2020/09/conventional-fuels-hero.jpg');
-}
-
-.cost-of-ownership .icon {
-    background-image: url('https://assets-global.website-files.com/60a6b551be6130e4e5b19b98/616453a91181419f74fe28e1_614dfcd3caf4ce749abde1bf_cash-basis-sinking-your-startup.jpeg');
-}
-
-.tire-size .icon {
-    background-image: url('https://qph.cf2.quoracdn.net/main-qimg-4dddb3c212617d63a541afa13a7da947');
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -316,3 +265,75 @@ body {
     background-color: #1E90FF;
     border-radius: 10px;
 } */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#question {
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 48%;
+    margin: 0.5%;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.image1 {
+    max-width: 40%;
+}
+
+
+.container button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
